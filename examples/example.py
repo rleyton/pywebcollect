@@ -24,7 +24,7 @@ import json
 example=pywebcollect.WebCollect(account='webcollectaccount',token='YOURAPITOKENFROMWEBCOLLECT')
 
 # Now call it to fetch a single email address (your own?)
-example.call(method="/member",params={'email':'YOUR@EMAIL.ADDRESS})
+example.call(method="/member",params={'email':'YOUR@EMAIL.ADDRESS'})
 
 # Dump it out
 print("JSON: "+json.dumps(example.JSONSubscriptions(),indent=4,default=str))
